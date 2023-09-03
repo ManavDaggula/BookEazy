@@ -5,19 +5,19 @@ function ServicemenShowCard(props) {
   return (
     <div className={styles.servicemenCard}>
       <div className={styles.leftContainer}>
-        <img src={props.image} alt="Manav Daggula" />
+        <img src={props.image} alt={props.name} />
         <span>33$</span>
       </div>
       <div className={styles.rightContainer}>
         <div>
-          <span>Manav Daggula</span>
+          <span>{props.name}</span>
           <span>
-            4
+            {props.rating}
             <StarLogo />
           </span>
           {/* <span>{props.rating}</span> */}
         </div>
-        <span>I am a regular human being that can help you fix anything. I am capable of fixing any electrical appliance at your home and thus fix your mood 😜</span>
+        <span>{props.about}</span>
       </div>
     </div>
   );
